@@ -1,8 +1,125 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+:root{
+--green: #1abc9c;
+--greenDark: #16a085;
+--withe: #fff;
+}
 
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
+}
+
+body{
+	background-color: var(--green);
+	overflow: hidden;
+}
+
+.container{
+	max-width: 440px;
+	padding: 0 20px;
+	margin: 170px auto;
+}
+
+.wrapper{
+	width: 100%;
+	background: var(--withe);
+	border-radius: 5px;
+}
+
+.wrapper .title{
+	line-height: 80px;
+	background-color: var(--greenDark);
+	text-align: center;
+	border-radius: 5px 5px 0 0;
+	color: var(--withe);
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.wrapper form{
+	padding: 30px 25px 25px 25px;
+}
+
+.wrapper form .row{
+	height: 45px;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.wrapper form .pass{
+	margin: -10px 0 20px 0;
+
+}
+
+.wrapper form .pass a{
+	color: var(--green);
+	font-size: 17px;
+	text-decoration: none;
+}
+
+.wrapper form .pass a:hover{
+	text-decoration: underline;
+}
+
+.wrapper form .row input{
+	height: 100%;
+	width: 100%;
+	outline: none;
+	padding-left: 60px;
+	border-radius: 5px;
+	border: 1px solid lightgray;
+	font-size: 16px;
+	transition: all 0.3s ease;
+}
+
+form .row input:focus{
+	border-color: var(--greenDark);
+	box-shadow: inset 0px  0px 2px 2px rgba(26, 188 , 156,0.25);
+}
+
+.wrapper form .row i{
+	position: absolute;
+	width: 47px;
+	height: 100%;
+	color: var(--withe);
+	font-size: 18px;
+	background: var(--green);
+	border: 1px solid var(--green);
+	border-radius: 5px 0 0 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wrapper form .button input{
+	color: var(--withe);
+	font-size: 20px;
+	font-weight: 500;
+	padding-left: 0px;
+	background: var(--green);
+	border: 1px solid var(--green);
+	cursor: pointer;
+}
+
+form .button input:hover{
+	background: var(--greenDark);
+}
+
+.wrapper form .signup-link{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 17px;
+}
+
+.wrapper form .signup-link a{
+	color: var(--green);
+	
+	text-decoration: none;
+}
+
+form .signup-link a:hover{
+	text-decoration: underline;
 }
